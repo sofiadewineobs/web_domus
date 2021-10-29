@@ -1,71 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-         <meta chaset="uft-8"/>
-         <title>Contacto</title>
-         <meta http-equiv "X-UA-Compatible" content="IE=Edge">
-         <meta name="viewport" contet ="width=device-width, initial-scale=1.0"
-    </head> 
-    <body>
-          <h1> Contacto </h1>
-          <nav>
-            
-            <a href="index.html">Inicio</a>
-            <a href="habitaciones.html">Nuestras habitaciones</a>
-            <a href=espacios.html>Espacios</a>
-            <a href="servicios.html">Servicios</a>
+
+<head>
+   <meta chaset="uft-8" />
+   <title> Domus Guest House</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Domus Petit hotel, unique stays. viva la experiencia unica de disfrutar su estadía en Mendoza en un entorno inigualable">
+   <meta name="keywords"
+      content="hotel, hospedaje, habitacion, alojamiento, guest house, Mendoza, Argentina, bed and breakfast, bed & breakfast, Domus Malbec">
+   <link rel="stylesheet" style="text/css" href="css/estilos.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="link rel=" preconnect href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;300&family=Roboto:wght@100&family=Zen+Antique+Soft&display=swap"
+      rel="stylesheet">
+   <script src="js/contacto.js"></script>
+</head>
+
+<body>
+   <div class="container">
+      <div class="header">
+         <h1>
+            <p>domus</p>
+         </h1>
+         <h3>guest house</h3>
+      </div>
+
+      <div class="nav-links">
+         <nav>
+            <a href="domusindex.html">Inicio</a>
+            <a href="galeria"> Galería de Fotos</a>
+            <a href="habitaciones.html">Habitaciones</a>
+            <a href="espacios.html">Espacios</a>
             <a href="quienes_somos.html">Quienes Somos</a>
-            <a href="contacto.html">Contacto</a>      
-          </nav>
-          <section name="formulario" action="method"="post">
-            <form name ="Queremos que seas nuestro huesped. Hablemos:">
-             <fieldset name ="contacto"
-                <label for = "nombre"> ingrese su nombre </label>
-                   <input type= "text" name= "nombre"> 
-                   <br>
-                <label for ="apellido">ingrese su apellido</label>  
-                   <input type ="text" name= "apellido"> 
-                   <br>
-                <label for="mail">ingrese su correo</label>
-                   <input type ="mail" name= "correo">
-                   <br>
-                <label for= "pass" >ingrese su contraseña</label>
-                   <input type="pass" name= "contraseña">
-                   <br>
-                <label for ="control mail">confirme su correo</label>
-                   <input type= "control mail" name="confirme su correo">
-                   <br>
-                <label for="consulta">
-                   <textarea name="consulta" rows="10" cols="50"></textarea>
-                   <input type="submit" name="enviar" value="enviar">
-            </fieldset>
+            <a href="contacto.html">Contacto</a>
+         </nav>
+      </div>
+
+      <div class="contactcontacto">
+         <div>
+            <h1>Contacto</h1>
+            <h2>Será un placer recibirlo en Nuestra Casa. Complete el siguiente formulario y nos comunicaremos con
+               Ud a la brevedad:</h2>
+         </div>
+
+         <form class="formcontacto" onsubmit="validar ();">
+            <div>
+               <label for="nombre"> Ingresa tu nombre </label>
+               <input type="text" placeholder="Ingresa tu nombre" id='nombre'>
+            </div>
+            <div>
+               <label for="apellido">Ingresa tu apellido</label>
+               <input type="text" placeholder="Ingresa tu apellido" id='apellido'>
+            </div>
+            <div>
+               <label for="mail">Ingresa tu correo</label>
+               <input type="text" placeholder="Ingresa tu correo" id='mail'>
+            </div>
+            <div>
+               <label for="controlMail">Confirma tu correo</label>
+               <input type="text" placeholder="Confirma tu correo" id='controlMail'>
+            </div>
+            <div>
+               <label for="fechaIngreso">Fecha de ingreso</label>
+               <input type="text" placeholder="¿Cuando llegas?" id='fechaIngreso'>
+            </div>
+            <div>
+               <label for="fechaSalida">Fecha de salida</label>
+               <input type="text" placeholder="¿Cuando partes?" id='fechaSalida'>
+            </div>
+            <div>
+               <label for="cantPax"> Cantidad de Personas</label>
+               <input type="text" placeholder="¿Cuántas personas son?" id='cantPax'>
+            </div>
+            <div>
+               <label for="consulta"> Comentario adicional </label>
+               <br>
+               <textarea name="Información adicional" placerholder="Escribe aquí eu consulta o comentario adicional"
+                  rows="10" cols="50"></textarea>
+            </div>
             <br>
-                
+            <div>
+               <input type="submit" value="enviar">
+            </div>
+            <br>
+         </form>
+      </div>
 
-            <select name="seleccionar">
-             <option value ="femenino">"femenino"
-             </option>  
-             <opcion value ="masculino">"masculino"</option>
-            </select>
+      <div class="iframe">
+         <h1>¿Donde queda Domus Guest House?</h1>
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.285351080039!2d-68.85639178496739!3d-32.890622980937884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0906eaea6f79%3A0x62c3b916c2c1bffc!2sOlascoaga%20857%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1629847510294!5m2!1ses!2sar"
+            width="600" height="450" style="border: 0 ; " allowfullscreen="" loading="lazy"></iframe>
+      </div>
 
-            
-            </form>
-        </section>
-        <div>
-            <h1><mark>¿Donde queda Domus Petit Hotel?</mark></h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.285351080039!2d-68.85639178496739!3d-32.890622980937884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0906eaea6f79%3A0x62c3b916c2c1bffc!2sOlascoaga%20857%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1629847510294!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"
-        </div>
-        <div>Folow Us</div>
-        <br>
-        
+      <div class="footer">Follow Us</div>
 
-
-    </body>  
-
-
-
-
-
-
+   </div>
+</body>
 
 </html>

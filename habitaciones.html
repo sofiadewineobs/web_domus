@@ -1,28 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestras Habitaciones</title>
-</head>
-<body>
-    <h1>Quienes somos</h1>
-    <nav>    
-        <a href="index.html">Inicio</a>
-        <a href="habitaciones.html">Nuestras habitaciones</a>
-        <a href=espacios.html>Espacios</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="quienes_somos.html">Quienes Somos</a>
-        <a href="contacto.html">Contacto</a> 
-   </nav>
-   <main><h1>habitaciones Domus
-    <ol>
-        <li> habitacion azul</li>
-        <li> habitacion violeta</li>
-        <li> habitacion del pánico</li>
-    </ol>
 
-</h1></main>
+<head>
+    <meta chaset="uft-8" />
+    <title> Domus Guest House</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Domus Petit hotel, unique stays. viva la experiencia unica de disfrutar su estadía en Mendoza en un entorno inigualable">
+    <meta name="keywords"
+        content="hotel, hospedaje, habitacion, alojamiento, guest house, Mendoza, Argentina, bed and breakfast, bed & breakfast, Domus Malbec">
+    <link rel="stylesheet" style="text/css" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="link rel=" preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;300&family=Roboto:wght@100&family=Zen+Antique+Soft&display=swap"
+        rel="stylesheet">
+    <script src="js/contacto.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <p>domus</p>
+            </h1>
+            <h3>guest house</h3>
+        </div>
+
+        <div class="nav-links">
+            <nav>
+                <a href="domusindex.html">Inicio</a>
+                <a href="galeria"> Galería de Fotos</a>
+                <a href="habitaciones.html">Habitaciones</a>
+                <a href="espacios.html">Espacios</a>
+                <a href="quienes_somos.html">Quienes Somos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Descubre nuestras exclusivas habitaciones</h1>
+        </div>
+        <div class="habgris">
+            <h1>Habitación Gris</h1>
+            <h2>salida al jardín</h2>
+            <div class="hover"><button> ver más</button></div>
+        </div>
+
+        <div class="habverde">
+            <h1>Habitación Verde</h1>
+            <h2>vista al jardín</h2>
+            <div class="hover"><button> ver más</button></div>
+        </div>
+
+        <div class="habcolorada">
+            <h1>Habitación Colorada</h1>
+            <h2>salida al jardín </h2>
+            <div class="hover"><button> ver más</button></div>
+
+        </div>
+
+
+        <div class="contacthabitaciones">
+            <div>
+                <h1>Contacto</h1>
+                <h2>Será un placer recibirlo en Nuestra Casa. Complete el siguiente formulario y nos comunicaremos con
+                    Ud a la brevedad:</h2>
+            </div>
+
+            <form class="formhabitaciones" onsubmit="validar ();">
+                <div>
+                    <label for="nombre"> Ingresa tu nombre </label>
+                    <input type="text" placeholder="Ingresa tu nombre" id='nombre'>
+                </div>
+                <div>
+                    <label for="apellido">Ingresa tu apellido</label>
+                    <input type="text" placeholder="Ingresa tu apellido" id='apellido'>
+                </div>
+                <div>
+                    <label for="mail">Ingresa tu correo</label>
+                    <input type="text" placeholder="Ingresa tu correo" id='mail'>
+                </div>
+                <div>
+                    <label for="controlMail">Confirma tu correo</label>
+                    <input type="text" placeholder="Confirma tu correo" id='controlMail'>
+                </div>
+                <div>
+                    <label for="fechaIngreso">Fecha de ingreso</label>
+                    <input type="text" placeholder="¿Cuando llegas?" id='fechaIngreso'>
+                </div>
+                <div>
+                    <label for="fechaSalida">Fecha de salida</label>
+                    <input type="text" placeholder="¿Cuando partes?" id='fechaSalida'>
+                </div>
+                <div>
+                    <label for="cantPax"> Cantidad de Personas</label>
+                    <input type="text" placeholder="¿Cuántas personas son?" id='cantPax'>
+                </div>
+                <div>
+                    <label for="consulta"> Comentario adicional </label>
+                    <br>
+                    <textarea name="Información adicional"
+                        placerholder="Escribe aquí eu consulta o comentario adicional" rows="10" cols="50"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="enviar">
+                </div>
+                <br>
+            </form>
+        </div>
+
+        <div class="ubicacion">
+            <h1>¿Donde queda Domus Guest House?</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.285351080039!2d-68.85639178496739!3d-32.890622980937884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0906eaea6f79%3A0x62c3b916c2c1bffc!2sOlascoaga%20857%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1629847510294!5m2!1ses!2sar"
+                width="600" height="450" style="border: 0 ; " allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="footer"> Follow Us</div>
+    </div>
 </body>
+
 </html>
